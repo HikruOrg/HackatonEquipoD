@@ -11,3 +11,6 @@ backend/outputs/*
 
 # VSCode
 .vscode/
+
+node_modules/
+dist/
