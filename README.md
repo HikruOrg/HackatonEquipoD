@@ -15,6 +15,7 @@ A full-stack application for categorizing images stored in Azure Blob Storage us
 - **Visual Results**: Interactive charts and detailed results display
 - **Export Options**: Generate Excel and HTML reports
 - **Real-time Processing**: Live feedback during image categorization
+- **Dark Mode**: Toggle between light and dark themes with persistent preference
 - **Responsive Design**: Modern, mobile-friendly interface
 
 ## 🏗️ Architecture

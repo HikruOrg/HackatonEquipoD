@@ -1,0 +1,214 @@
+/* Dark mode custom styles for better appearance */
+
+/* Global dark mode styles */
+.dark-mode {
+  --bs-body-bg: #1a1a1a;
+  --bs-body-color: #e9ecef;
+  --bs-border-color: #495057;
+}
+
+.dark-mode body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Card styling for dark mode */
+.dark-mode .card {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  color: #e9ecef;
+}
+
+.dark-mode .card-header {
+  background-color: #4a5568;
+  border-color: #4a5568;
+  color: #e9ecef;
+}
+
+.dark-mode .card-body {
+  background-color: #2d3748;
+}
+
+/* Form controls in dark mode */
+.dark-mode .form-control {
+  background-color: #4a5568;
+  border-color: #6c757d;
+  color: #e9ecef;
+}
+
+.dark-mode .form-control:focus {
+  background-color: #4a5568;
+  border-color: #0d6efd;
+  color: #e9ecef;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.dark-mode .form-control::placeholder {
+  color: #adb5bd;
+}
+
+/* Badges in dark mode */
+.dark-mode .badge.bg-secondary {
+  background-color: #6c757d !important;
+  color: #fff;
+}
+
+.dark-mode .badge.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+/* List groups in dark mode */
+.dark-mode .list-group-item {
+  background-color: #2d3748;
+  border-color: #4a5568;
+  color: #e9ecef;
+}
+
+.dark-mode .list-group-item.list-group-item-action:hover {
+  background-color: #4a5568;
+  color: #e9ecef;
+}
+
+/* Table styling in dark mode */
+.dark-mode .table {
+  --bs-table-bg: #2d3748;
+  --bs-table-color: #e9ecef;
+  --bs-table-border-color: #4a5568;
+  --bs-table-striped-bg: #374151;
+  --bs-table-hover-bg: #4a5568;
+}
+
+.dark-mode .table-striped > tbody > tr:nth-of-type(odd) > td {
+  background-color: var(--bs-table-striped-bg);
+}
+
+/* Progress bars in dark mode */
+.dark-mode .progress {
+  background-color: #4a5568;
+}
+
+/* Alerts in dark mode */
+.dark-mode .alert-success {
+  background-color: #0f2419;
+  border-color: #0a5d00;
+  color: #75b798;
+}
+
+/* Button styling in dark mode */
+.dark-mode .btn-outline-primary {
+  color: #6ea8fe;
+  border-color: #6ea8fe;
+}
+
+.dark-mode .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+
+.dark-mode .btn-outline-danger {
+  color: #f5c2c7;
+  border-color: #dc3545;
+}
+
+.dark-mode .btn-outline-danger:hover {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+/* Form labels in dark mode */
+.dark-mode .form-label {
+  color: #e9ecef;
+}
+
+/* Text colors */
+.dark-mode .text-danger {
+  color: #f5c2c7 !important;
+}
+
+.dark-mode .text-muted {
+  color: #adb5bd !important;
+}
+
+/* Invalid feedback styling */
+.dark-mode .invalid-feedback {
+  color: #f5c2c7;
+}
+
+.dark-mode .is-invalid {
+  border-color: #dc3545;
+}
+
+/* Custom scrollbar for dark mode */
+.dark-mode ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dark-mode ::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb {
+  background: #4a5568;
+  border-radius: 4px;
+}
+
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #6c757d;
+}
+
+/* Chart container styling for better visibility in dark mode */
+.dark-mode .recharts-wrapper {
+  background-color: #2d3748;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.dark-mode .recharts-cartesian-grid line {
+  stroke: #4a5568;
+}
+
+.dark-mode .recharts-text {
+  fill: #e9ecef;
+}
+
+/* Accordion styling for dark mode */
+.dark-mode .accordion-item {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
+
+.dark-mode .accordion-button {
+  background-color: #2d3748;
+  color: #e9ecef;
+  border-color: #4a5568;
+}
+
+.dark-mode .accordion-button:not(.collapsed) {
+  background-color: #374151;
+  color: #e9ecef;
+}
+
+.dark-mode .accordion-body {
+  background-color: #2d3748;
+  color: #e9ecef;
+}
+
+/* Pre tag styling for JSON display */
+.dark-mode pre {
+  background-color: #1a1a1a !important;
+  color: #e9ecef;
+  border: 1px solid #4a5568;
+}
+
+/* Close button styling */
+.dark-mode .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

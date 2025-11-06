@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTheme } from "./ThemeContext";
 import {
   ResponsiveContainer,
   BarChart,
@@ -13,6 +14,7 @@ import {
 const API_URL = "http://localhost:8000/process";
 
 const ClassifierPage: React.FC = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
   const [connectionString, setConnectionString] = useState("");
   const [jsonFile, setJsonFile] = useState<File | null>(null);
   const [useFile, setUseFile] = useState(true);
@@ -133,8 +135,15 @@ const ClassifierPage: React.FC = () => {
 
   return (
     <div className="container mt-5">
-      <div className="mb-4">
+      <div className="d-flex justify-content-between align-items-center mb-4">
         <h2>🧠 Azure Image Processor</h2>
+        <button 
+          className={`btn btn-outline-${isDarkMode ? 'light' : 'dark'}`}
+          onClick={toggleDarkMode}
+          title="Toggle dark mode"
+        >
+          {isDarkMode ? '☀️' : '🌙'}
+        </button>
       </div>
 
       <form onSubmit={handleSubmit} className="card p-4 shadow-sm">
@@ -159,7 +168,7 @@ const ClassifierPage: React.FC = () => {
             className="form-control"
             value={user}
             onChange={(e) => setUser(e.target.value)}
-            placeholder="Specific user folder to process (leave empty for all users)"
+            placeholder="Specific user to process (leave empty for all users)"
           />
         </div>
 
