@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+.env
+*.env
+backend/.env
+
+# Outputs (optional ignore – comment out lines to keep artifacts)
+backend/outputs/*
+!backend/outputs/*.html
+!backend/outputs/*.xlsx
+
+# VSCode
+.vscode/

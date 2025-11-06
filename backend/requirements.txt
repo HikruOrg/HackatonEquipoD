@@ -1,0 +1,12 @@
+pandas
+plotly
+Pillow
+openpyxl
+fastapi
+uvicorn[standard]
+python-multipart
+azure-storage-blob
+azure-identity
+azure-cognitiveservices-vision-computervision
+msrest
+python-dotenv

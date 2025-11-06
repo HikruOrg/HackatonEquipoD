@@ -1,0 +1,7 @@
+{
+  "people": ["person", "man", "woman", "boy", "girl"],
+  "animal": ["dog", "cat", "bird", "horse"],
+  "vehicle": ["car", "bus", "truck", "bicycle"],
+  "food": ["pizza", "apple", "cake"],
+  "landscape": ["tree", "mountain", "beach"]
+}
